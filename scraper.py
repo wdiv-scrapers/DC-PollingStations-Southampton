@@ -6,7 +6,7 @@ districts_url = "http://www.southampton.gov.uk/geoserver/wms?LAYERS=SCC%3APOLLIN
 council_id = 'E06000045'
 
 
-stations_scraper = HashOnlyScraper(stations_url, council_id, 'stations')
+stations_scraper = HashOnlyScraper(stations_url, council_id, 'stations', 'kml')
 stations_scraper.scrape()
-districts_scraper = HashOnlyScraper(districts_url, council_id, 'districts')
+districts_scraper = HashOnlyScraper(districts_url, council_id, 'districts', 'kml')
 districts_scraper.scrape()
